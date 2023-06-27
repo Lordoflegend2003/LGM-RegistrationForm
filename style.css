@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 50px 150px;
+    background-color: black; 
+  }
+
+  h1 {
+    text-align: center;
+    gap: 5px;
+    text-shadow: 2px 2px grey;
+    word-spacing: 2px;
+  }
+
+  .main{
+    background-color: rgba(255, 255, 255, 0.826);
+    padding: 70px;
+    min-height: 500px;
+  }
+
+  span{
+    color:rgb(0, 0, 0);
+  }
+
+
+  .Task{    
+    padding-bottom: 10px;
+    display: inline-block;
+    left: 11px;
+    word-spacing: 2px;
+    position: relative;
+    text-shadow: 2px 2px grey;
+  }
+
+  #todo-list ul{
+    list-style-image: url(tick.png);
+  }
+  #todo-list {
+    list-style-type: none;
+    padding: 5px;
+    padding-top:10px ;
+  }
+
+  #todo-list li {
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    list-style-image: url(tick.png);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  #todo-list li label {
+    flex-grow: 1;
+    margin-right: 10px;
+    word-break: break-all;
+  }
+
+  #todo-list li.completed label {
+    text-decoration: line-through;
+    color: #999;
+  }
+
+  #todo-list li.important label {
+    font-weight: bold;
+  }
+
+  #todo-list li button {
+    padding: 5px 10px;
+    background-color: #ff5f5f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+
+  #todo-list li button.edit-button {
+    background-color: #2196f3;
+  }
+
+  #todolist {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  #todo-input {
+    flex-grow: 1;
+    background-image: url(add.png);
+    background-position: 5px 10px;
+    resize: none;
+    padding: 15px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+
+
+  #add-button {
+    padding: 10px 20px;
+    size: 20px;    
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
